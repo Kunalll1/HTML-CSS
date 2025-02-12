@@ -5,8 +5,9 @@
   --netural-2: #0c0e17;
   --primary-1: #ff1919;
   --netural-3: #fafafa;
+  --boder-color: ##0c0e1752;
 
-  --font-h1: clamp(2.5rem, calc(2rem + 2%), 3.5rem);
+  --font-h1: clamp(3.75rem, calc(3.5rem + 2vw), 7.5rem);
   --font-h2: clamp(1.75rem, calc(1.5rem + 2%), 2.5rem);
   --font-body-l: clamp(1rem, calc(0.875rem + 2%), 1.5rem);
   --font-body-s: clamp(0.75rem, calc(0.625rem + 1%), 1rem);
@@ -468,7 +469,7 @@ body {
 .mr-5 {
   margin-right: var(--s-5);
 }
-
+/* ==== button ====== */
 .btn-primery {
   background-color: var(--primary-1);
   color: var(--netural-1);
@@ -476,8 +477,10 @@ body {
   font-size: var(--font-body-s);
   appearance: none;
   font-weight: 600;
+  border: 1px solid var(--boder-color);
 }
 .btn-sec {
+  border: 1px solid var(--boder-color);
   background-color: var(--netural-3);
   color: var(--netural-2);
   border-radius: var(--s-1);
@@ -510,4 +513,19 @@ a {
   text-decoration: none;
   color: var(--netural-3);
   font-size: var(--font-body-s);
+}
+
+.text h1 {
+  font-size: var(--font-h1);
+  color: var(--netural-1);
+}
+.text p {
+  font-size: var(--font-body-l);
+  color: var(--netural-3);
+  width: 70%;
+  line-height: 170%;
+}
+
+main {
+  height: calc(100svh - var(--s-3) - var(--s-3));
 }
