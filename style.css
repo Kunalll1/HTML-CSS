@@ -13,9 +13,9 @@
   --font-body-s: clamp(0.75rem, calc(0.625rem + 1%), 1rem);
 
   /* Breakpoints  font size*/
-  --font-small: 18px;
-  --font-base: 20px;
-  --font-large: 24px;
+  --font-small: 14px;
+  --font-base: 16px;
+  --font-large: 18px;
 
   /* Spacing */
   --space-unit: 0.25rem;
