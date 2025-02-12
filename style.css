@@ -12,26 +12,32 @@
   --font-body-s: clamp(0.75rem, calc(0.625rem + 1%), 1rem);
 
   /* Breakpoints  font size*/
-  --font-small: 14px;
-  --font-base: 16px;
-  --font-large: 18px;
+  --font-small: 18px;
+  --font-base: 20px;
+  --font-large: 24px;
 
   /* Spacing */
   --space-unit: 0.25rem;
   --s-1: max(
     calc(var(--space-unit) * 3),
     calc(0.375% + var(--space-unit) * 1.5)
-  );
-  --s-2: max(calc(var(--space-unit) * 4), calc(0.5% + var(--space-unit) * 2));
+  ); /* ~14px */
+  --s-2: max(
+    calc(var(--space-unit) * 4),
+    calc(0.5% + var(--space-unit) * 2)
+  ); /* ~18px */
   --s-3: max(
     calc(var(--space-unit) * 9),
     calc(1.125% + var(--space-unit) * 4.5)
-  );
-  --s-4: max(calc(var(--space-unit) * 10), calc(1.25% + var(--space-unit) * 5));
+  ); /* ~40px */
+  --s-4: max(
+    calc(var(--space-unit) * 10),
+    calc(1.25% + var(--space-unit) * 5)
+  ); /* ~45px */
   --s-5: max(
     calc(var(--space-unit) * 11),
     calc(1.375% + var(--space-unit) * 5.5)
-  );
+  ); /* ~50px */
 
   --container-max-width: clamp(90%, 65rem, 88.625rem); /* ~1418px fluid */
   --container-gutter: clamp(1rem, 2vw, 2rem); /* ~32px fluid */
@@ -461,4 +467,47 @@ body {
 }
 .mr-5 {
   margin-right: var(--s-5);
+}
+
+.btn-primery {
+  background-color: var(--primary-1);
+  color: var(--netural-1);
+  border-radius: var(--s-1);
+  font-size: var(--font-body-s);
+  appearance: none;
+  font-weight: 600;
+}
+.btn-sec {
+  background-color: var(--netural-3);
+  color: var(--netural-2);
+  border-radius: var(--s-1);
+  font-size: var(--font-body-s);
+  appearance: none;
+  font-weight: 600;
+}
+
+/*===== Coustome CSS start here ========== */
+.bg-img {
+  background: linear-gradient(
+      122deg,
+      rgb(12 14 23 / 100%) 0%,
+      rgb(12 14 23 / 12%) 100%
+    ),
+    url(./bg-img.webp) center center / cover no-repeat;
+  height: 100svh;
+  width: 100svw;
+}
+
+.sub-menu {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--netural-3);
+  font-size: var(--font-body-s);
 }
